@@ -1,0 +1,5 @@
+# Relinquish the GCP resources instead of deleting them when this environment is
+# removed. The environment is about to be renamed, which deletes it and creates a
+# new one, and some of the resources it composes share names with another
+# deployment in cne-development.
+orphanOnDelete: true
